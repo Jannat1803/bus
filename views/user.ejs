@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <% user.forEach(function(user){ %>
+    <form action="/update-user" method="post">
+        <input type="hidden" name="id" value=<%-user.id%>>
+        <input type="text" placeholder="name" name="name" value=<%-user.name%>>
+        <input type="email" placeholder="email" name="email" value=<%-user.email%>>
+        <input type="text" placeholder="password" name="pass" value=<%-user.password%>>
+        <input type="submit" value="submit">
+    </form>
+    <% }); %>
+</body>
+</html>

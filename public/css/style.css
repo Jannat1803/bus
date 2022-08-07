@@ -1,0 +1,96 @@
+*{
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .main{
+     width: 100%;
+     background-image: url(bus_update.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 741px;
+ }
+ 
+ .navbar{
+     background: rgb(0, 100, 40);
+     /*opacity: 0.6;*/
+     margin: auto;
+ }
+ 
+ .icon{
+     float: left;
+     width: 200px;
+     height: 70px;
+ }
+ 
+ .logo{
+     color:aliceblue;
+     padding-left: 35px;
+     padding-top: 18px;
+     float: left;
+     font-size: 30px;
+     font-family: 'Gill Sans';
+     font-style: italic;
+     font-weight: 700;
+ }
+ 
+ .navigation{
+     text-align: right;
+ }
+ 
+ .navigation ul{
+     display: inline-flex;
+     list-style: none;
+     color: aliceblue;
+ }
+ 
+ .navigation ul li{
+     width: 30x;
+     margin: 15px;
+     padding: 10px;
+ 
+ }
+ 
+ .navigation ul li a{
+     text-decoration: none;
+     color: aliceblue;
+ }
+ 
+ .navigation ul li:hover{
+     background: #2bab0d;
+     border-radius: 4px;
+ }
+ 
+ .sub-menu{
+     display: none;
+ }
+ 
+ .navigation ul li:hover .sub-menu{
+     display: block;
+     position: absolute;
+     background: rgb(0, 100, 40);
+     margin-top: 15px;
+     margin-left:-10px;
+ }
+ 
+ .navigation ul li:hover .sub-menu ul{
+     display: block;
+     margin: 7px;
+ }
+ 
+ .navigation ul li:hover .sub-menu ul li{
+     width: 50px;
+     padding: 10px;
+     border-bottom: 1px dotted #ffffff;
+     background: transparent;
+     border-radius: 0;
+     text-align: middle;
+ }
+ 
+ .navigation ul li:hover .sub-menu ul li:last-child{
+     border-bottom: none;
+ }
+ 
+ .navigation ul li:hover .sub-menu ul li a:hover{
+     color: #78807A;
+ }
