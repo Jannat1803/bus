@@ -20,35 +20,30 @@
 <body>
     <table border="2" cellspacing="0" cellpadding="0">
         <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>Email</td>
-            <td>Action</td>
+            <td>Bus No</td>
+            <td>From</td>
+            <td>To</td>
+            <td>Time</td>
+            <td>Driver Name</td>
         </tr>
 
-        <% users.forEach(function(user){ %>
+        <% schedules.forEach(function(schedule){ %>
 
         <tr>
             <td>
-                <%-user.id %>
+                <%-schedule.Bus_No %>
             </td>
             <td>
-                <%-user.name %>
+                <%-schedule.From %>
             </td>
             <td>
-                <%-user.email %>
+                <%-schedule.To %>
             </td>
             <td>
-                <button class="btn btn-info">
-                    <a href='/user/edit/<%-user.id %>'>
-                        <i class="fa-solid fa-pencil"></i>
-                    </a>
-                </button>
-                <button class="btn btn-danger">
-                    <a class="text-white" href='/user/delete/<%-user.id %>'>
-                        <i class="fa-solid fa-trash-can" style="color: white;"></i>
-                    </a>
-                </button>
+                <%-schedule.Time %>
+            </td>
+            <td>
+                <%-schedule.Name %>
             </td>
         </tr>
         <% }); %>

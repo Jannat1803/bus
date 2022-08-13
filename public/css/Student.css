@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(bus_update.jpg);
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 741px;
+    font-family: sans-serif;
+}

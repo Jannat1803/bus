@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loging page of student</title>
+    <link rel="stylesheet" href="/css/Driver.css">
+</head>
+<body>
+  <div style="background:rgba(255,255,255,0.5); width:100vw; height:100vh;">
+    <div class="bg_img"></div>
+
+  <div class="main">
+
+    <input type="checkbox" id="chk" aria-hidden="true">
+
+    <div class="signup">
+      <form method="post" action="/register-student">
+        <label for="chk" aria-hidden="true">Sign Up</label>
+        <input type="text" name="names" placeholder="User name" required>
+        <input type="email" name="emails" placeholder="Email" required>
+        <input type="password" name="passs" placeholder="Password" required>
+        <input type="tel" name="contacts" placeholder="Contact Number" required>
+        <button>Sign up</button>
+      </form>
+
+    </div>
+
+    <div class="login">
+      <form method="post" action="/student-login">
+        <label for="chk" aria-hidden="true">Login</label>
+        <input type="email" name="emaill" placeholder="Email" required>
+        <input type="password" name="passl" placeholder="Password" required>
+        <button>Login</button>
+        <a href="#">Forget password?</a>
+      </form>
+
+    </div>
+  </div>
+  </div>
+
+</body>
